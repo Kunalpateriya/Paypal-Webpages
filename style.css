@@ -1,0 +1,512 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: black;
+}
+
+.navbar ul{
+    display: flex;  /*helping arrange in column*/
+    list-style: none;   /*remove disc*/
+    /* cursor: pointer; */
+    font-weight: bold;
+    font-family:   Arial, Helvetica, sans-serif;
+}
+
+.nav-links li{
+    margin: 15px 0;
+}
+
+.navbar label {
+    display: none;
+  }
+
+.menu-toggle{
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked ~ .navbar ul {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        height: 75px;
+        /* padding: 5px 20px; */
+    }
+
+    .navbar label{
+        display: block;
+    }
+    
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        border: 3px solid red;
+        color: white;
+        background-color: #029de0;
+        top: 100px;
+    }
+}
+
+a {
+    color: white;
+    padding: 5px 10px;  /*10 Y-Axis gaping b/t about   home   contact both imp P,M*/
+    margin: 0px 10px;   
+    /* border: 2px solid blue; */
+}
+
+.logo-img {
+    background: url(/image/PayPal-Logo.png) no-repeat center center/cover; /*Best for bg-image shorhand*/
+    width: 136px;
+    height: 50px;
+    /* border: 2px solid blue; */
+}
+
+.btn {
+    width: 84px;
+    height: 38px;
+    box-sizing: border-box;
+    /* border: 2px dashed blue; */
+    border-radius: 25px;
+    font-size: 12px;
+    align-items: center;
+    font-weight: 700px;
+    color: white;
+    background-color:  #0070ba;
+    cursor: pointer;
+}
+
+
+
+.sec-1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #029de0;
+}
+
+@media screen and (max-width:786px) {
+    .sec-1{
+        padding-top: 90px;
+        background-color: #029de0;
+    }
+}
+
+.sec-1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+    font-weight: 100;
+}
+
+.signupbtn {
+    width: 320px;
+    background-color: white;
+    height: 48px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.sec-2 {                 /*section-2*/
+    width: 100%;
+    height: 280px;
+    background-color: #029de0;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    position: absolute;
+    height: 280px;
+    object-fit: fill;
+}
+
+.sec-3 {                 /*section-3*/
+    width: 100%;
+    height: 140px;
+    background-color: #02377b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+ .sec-3 > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    /* border: 2px solid blue; */
+}
+
+.paypal-for-business {
+    width: 150px;
+    height: 38px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 12px;
+    cursor: pointer;   
+}
+
+.sec-4 {                 /*section-4*/
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid red; */
+    /* display: flex; */
+}
+
+.herosection {
+    width: 100%;
+    background-color: #f6f7fb;
+    /* border: 2px solid blue; */
+    display: flex; /*don't use display just use [container>content>text & img] every section      2 divs add in 1 div and seperate also*/
+}
+
+.hero-text {
+    flex-direction: column;
+    padding: 40px;
+    /* border: 2px solid blue; */
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #00A8EA;
+    padding-top: 43px;
+    /* border: 2px solid blue; */
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: black;
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+.shop-now {
+    width: 320px;
+    height: 48px;
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    border-radius: 25px;
+    border-color: #005EA6;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #F5F7FA;
+    color: #005EA6;
+    margin-top: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    margin-top: 35px;
+    margin-left: 100px;
+    width: 350px;
+    height: 350px;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width:786px) {
+    .herosection{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.superherosection {                 /*section-5*/
+    background-color: white;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex; /*2 divs add in 1 div and seperate also*/
+    justify-content: space-between;
+}
+
+.superhero-text {
+    flex-direction: column;
+    padding: 40px;
+    /* border: 2px solid blue; */
+}
+
+.superhero-text h1 {
+    font-size: 40px;
+    color: #00A8EA;
+    padding-top: 43px;
+    /* border: 2px solid blue; */
+    padding-left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.superhero-text p {
+    font-size: 16px;
+    color: black;
+    margin-top: 15px;
+    padding-left: 40px;
+}
+
+.Link-your-preferred-card {
+    width: 320px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border-color: #005EA6;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: white;
+    color: #00A8EA;
+    margin-top: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.hero-image {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.hero-image img {
+    margin-top: 35px;
+    margin-right: 150px;
+    width: 350px;
+    height: 350px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:786px) {
+    .superherosection{
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+    }
+}
+
+.hero {
+    background-color: #f6f7fb;
+    padding: 50px 100px;
+    height: 410px;
+}
+
+.hero-grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(2,1fr); */
+    background-color: #f6f7fb;
+    grid-gap: 20px;
+}
+
+.hero-item {
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.hero-item h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #00A8EA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.hero-item img {
+    padding-left: 10px;
+}
+
+.find-out-more {
+    box-sizing: border-box;
+    padding: 10px 70px;
+    color: #00A8EA;
+    font-weight: bold;
+    background-color: #f6f7fb;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 320px;
+    height: 38px;
+}
+
+@media screen and (max-width:786px) {
+    .hero-grids{
+        margin-bottom:500px;
+    }
+}
+
+.sec-7 {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    padding: 20px;
+}
+
+@media screen and (max-width:786px) {
+    .sec-7{
+        margin-top: 250px;
+    }
+}
+
+.container {
+    width: 100%;
+    /* display: block; */
+    height: 200px;
+}
+
+.container-text {
+    display: flex;
+    justify-content: center;    
+}
+
+.container-text h1 {
+    font-size: 40px;
+    color: #00A8EA;
+    padding-top: 43px;
+    /* border: 2px solid blue; */
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 18px 400px;
+}
+
+@media screen and (max-width:786px) {
+    .container-images{
+        padding: 0%;
+    }
+}
+
+.sec-8 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: #029de0;
+}
+
+.container-sec-8 {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: baseline;
+    padding: 65px;
+    text-align: center;
+}
+
+.container-sec-8 h2 {
+    color: white;
+    line-height: 30px;
+}
+
+.btn-sec-8 {
+    width: 320px;
+    height: 48px;
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    border-radius: 25px;
+    border-color: #005EA6;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #F5F7FA;
+    color: #005EA6;
+    margin-top: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.sec-9 {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.sec-9-text {
+    padding: 35px 140px;
+}
+
+@media screen and (max-width:786px) {
+    .sec-9-text {
+        padding: 10px 10px;
+    }
+}
+
+footer {
+    
+    width: 100%;
+    height: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+@media screen and (max-width:786px) {
+    footer {
+        padding: 10px 10px;
+    }
+}
+
+.row-a {
+    color: black;
+    display: flex;
+    justify-content: start;
+}
+
+.row-a a {
+    color: black;
+    text-decoration: none;
+}
+
+.row-b {
+    color: black;
+    display: flex;
+    justify-content: start;
+}
+
+.row-b a {
+    color: black;
+    text-decoration: none;
+}
+
+.row-c {
+    color: black;
+    justify-content: start;
+}
+
+.row-c p {
+    font-size: 13px;
+    color: black;
+    margin-top: 17px;
+    padding-left: 20px;   
+}
